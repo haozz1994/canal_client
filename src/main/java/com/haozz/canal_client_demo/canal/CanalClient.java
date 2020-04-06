@@ -13,6 +13,15 @@ import java.util.List;
  * @author: haozz
  * @date: 2020/4/4 23:46
  */
+
+/**
+ * canal的主要实现原理是mysql的主从复制，canal服务器会将自己伪装成mysql的slave服务器，向master服务器发送dump协议，获取到master服务器的数据变化记录
+ *
+ * 相关知识：
+ * MySQL主从复制；
+ * MySQL读写分离：MyCat
+ * MySQL分库分表：Sharding-JDBC
+ */
 public class CanalClient {
 
     /**
